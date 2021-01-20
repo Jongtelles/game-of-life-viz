@@ -28,7 +28,7 @@ function useWindowDimensions() {
       // prevent execution of previous setTimeout
       clearTimeout(timeoutId);
       // change dems from the state object after 150 milliseconds
-      timeoutId = setTimeout(() => setDems(getDems()), 150);
+      timeoutId = setTimeout(() => setDems(getDems()), 200);
     };
     // set resize listener
     window.addEventListener("resize", resizeListener);

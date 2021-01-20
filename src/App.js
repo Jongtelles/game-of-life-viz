@@ -23,7 +23,7 @@ function App() {
   }, [gameGenerated, windowDems]);
 
   return (
-    <div className='App'>
+    <div className='App' style={{ minHeight: height * 1.35 }}>
       <div className='App-content'>
         <h1>Conway's Game of Life Vizualizer</h1>
         {gameGenerated ? (
@@ -55,7 +55,7 @@ function App() {
             </ul>
           </>
         )}
-        <div className='game--container' style={{ minHeight: height }}>
+        <div className='game--container'>
           {gameGenerated ? (
             <>
               <Game
