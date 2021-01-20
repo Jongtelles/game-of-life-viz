@@ -1,38 +1,196 @@
+/* Global */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 10px;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  color: whitesmoke;
+}
+
+h1 {
+  font-size: 2.6rem;
+  margin: 0.5rem;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: whitesmoke;
+}
+
 .App {
-  text-align: center;
+  background: linear-gradient(#a653f5, #8f8cf2, #65b8bf, #f96cff, #fa92fb);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg-transparent {
+  padding: 0.75rem;
+  border-radius: 1rem;
+  background: rgba(0, 0, 0, 15%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.blurb {
+  font-size: 1.2rem;
+  max-width: 50%;
+  margin: 1rem 0 0;
+}
+
+.rules {
+  list-style: none;
+  font-size: 1.2rem;
+  max-width: 50%;
+  margin: 1rem 0 0;
+}
+
+li {
+  margin-left: 0.25rem;
+}
+
+.game--container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.board {
+  position: relative;
+  margin: 0 auto;
+  background-color: #000;
+  background-image: linear-gradient(#333 1px, transparent 1px),
+    linear-gradient(90deg, #333 1px, transparent 1px);
+  border: 3px solid whitesmoke;
+  box-sizing: content-box;
+}
+
+.controls > fieldset {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+  background: linear-gradient(
+    45deg,
+    #a653f5,
+    #8f8cf2,
+    #65b8bf,
+    #f96cff,
+    #fa92fb
+  );
+  color: whitesmoke;
+  border-radius: 1rem;
+  min-width: 10rem;
+  margin: 1rem;
+  padding: 1rem;
+  font-weight: bold;
+  border: 2px solid whitesmoke;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.generator-controls {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.generator-controls + p {
+  margin: 0.5rem 0;
+}
+
+fieldset {
+  background: rgba(0, 0, 0, 15%);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+label,
+select {
+  margin: 0 0.5rem;
+}
+
+.select-group {
+  background: rgba(0, 0, 0, 15%);
+  display: flex;
+  align-items: center;
+}
+
+.input-group {
+  background: rgba(0, 0, 0, 15%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group span {
+  text-align: center;
+}
+
+.footer {
+  padding: 0.75rem;
+  min-height: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  bottom: 0;
+}
+
+.footer--blurb {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+}
+
+.footer--copyright {
+  margin: 0.5rem 0 0;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2.4rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App {
+    overflow: scroll;
+  }
+
+  .blurb,
+  .rules {
+    max-width: 100%;
   }
 }

@@ -1,0 +1,106 @@
+.cell {
+  position: absolute;
+}
+
+/* color palletes */
+
+/* vaporwave */
+.cell.vapor:nth-child(6n + 1) {
+  background: #a653f5;
+}
+.cell.vapor:nth-child(6n + 2) {
+  background: #8f8cf2;
+}
+.cell.vapor:nth-child(6n + 3) {
+  background: #65b8bf;
+}
+.cell.vapor:nth-child(6n + 4) {
+  background: #f96cff;
+}
+.cell.vapor:nth-child(6n + 5) {
+  background: #fa92fb;
+}
+/* outrun */
+.cell.outrun:nth-child(6n + 1) {
+  background: #ff6c11;
+}
+.cell.outrun:nth-child(6n + 2) {
+  background: #ff3864;
+}
+.cell.outrun:nth-child(6n + 3) {
+  background: #2de2e6;
+}
+.cell.outrun:nth-child(6n + 4) {
+  background: #f6019d;
+}
+.cell.outrun:nth-child(6n + 5) {
+  background: #d40078;
+}
+/* kawaii */
+.cell.kawaii:nth-child(6n + 1) {
+  background: #befcff;
+}
+.cell.kawaii:nth-child(6n + 2) {
+  background: #defffa;
+}
+.cell.kawaii:nth-child(6n + 3) {
+  background: #ffdaf5;
+}
+.cell.kawaii:nth-child(6n + 4) {
+  background: #b0e1ff;
+}
+.cell.kawaii:nth-child(6n + 5) {
+  background: #e6c6ff;
+}
+/* neon */
+.cell.neon:nth-child(6n + 1) {
+  background: #66ff66;
+}
+
+.cell.neon:nth-child(6n + 2) {
+  background: #66e8ff;
+}
+
+.cell.neon:nth-child(6n + 3) {
+  background: #fe37fe;
+}
+
+.cell.neon:nth-child(6n + 4) {
+  background: #fff566;
+}
+
+.cell.neon:nth-child(6n + 5) {
+  background: #a79aff;
+}
+/* summer */
+.cell.summer:nth-child(6n + 1) {
+  background: #c6808c;
+}
+.cell.summer:nth-child(6n + 2) {
+  background: #6d5b87;
+}
+.cell.summer:nth-child(6n + 3) {
+  background: #44364b;
+}
+.cell.summer:nth-child(6n + 4) {
+  background: #ec745c;
+}
+.cell.summer:nth-child(6n + 5) {
+  background: #f5ad8c;
+}
+/* clouds */
+.cell.clouds:nth-child(6n + 1) {
+  background: #f08d7e;
+}
+.cell.clouds:nth-child(6n + 2) {
+  background: #efa18a;
+}
+.cell.clouds:nth-child(6n + 3) {
+  background: #e2bab1;
+}
+.cell.clouds:nth-child(6n + 4) {
+  background: #dda6b9;
+}
+.cell.clouds:nth-child(6n + 5) {
+  background: #acaec5;
+}
