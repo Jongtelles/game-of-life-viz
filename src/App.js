@@ -53,6 +53,9 @@ function App() {
                 other dead cells stay dead.
               </li>
             </ul>
+            <p className='blurb bg-transparent'>
+              But don't worry too much about the rules, just enjoy the show 😎
+            </p>
           </>
         )}
         <div className='game--container'>
